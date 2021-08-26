@@ -1,4 +1,8 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# NAMU landing
+Stack: HTML5, SASS
+
+Fully responsive layout was made using media queries, CSS Grid and Flexbox (mobiles, tablets, laptops, large screens)
+
+Click the link to see demo: [DEMO LINK](https://nastyyvolk.github.io/namu_landing/)
+
+Design of the page is [HERE](https://www.figma.com/file/cRBCqE06cDrY3s4jX7h3iY/%D0%9D%D0%90%D0%9C%D0%A3-(Edit)?node-id=2%3A256)

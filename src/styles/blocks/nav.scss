@@ -1,0 +1,66 @@
+.nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  transition: display 300ms ;
+
+  &__icon {
+    height: 12px;
+    width: $icon-width;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: transform 300ms;
+
+    &--open {
+      background-image: url("../images/icon.png");
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include on-desktop{
+    @include header-grid;
+  }
+}
+
+.nav-mob {
+  @include header-grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  &__icon {
+    height: 12px;
+    width: $icon-width;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: transform 300ms;
+    &--open {
+      background-image: url("../images/icon.png");
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include on-desktop {
+    display: none;
+  }
+}
+
+.menu:target ~ .nav {
+  display: none;
+}
